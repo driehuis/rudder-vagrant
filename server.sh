@@ -27,7 +27,7 @@ LDAPRESET="yes"
 ALLOWEDNETWORK[0]='192.168.42.0/24'
 
 # Packages required by Rudder
-apt-get --assume-yes install rudder-server-root
+apt-get --assume-yes install openjdk-8-jre-headless rudder-server-root
 
 # Initialize Rudder
 /opt/rudder/bin/rudder-init.sh $LDAPRESET ${ALLOWEDNETWORK[0]} < /dev/null > /dev/null 2>&1
